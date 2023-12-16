@@ -1,0 +1,5 @@
+BACKGROUNDS:
+- Night Time: 	https://www.pexels.com/photo/stars-during-night-time-176851/
+- Time Lapse:	https://www.pexels.com/photo/time-lapse-photo-of-stars-on-night-924824/
+- Mily Way:	https://www.pexels.com/photo/milky-way-photography-2312040/
+- Dark Starry:	https://www.pexels.com/photo/dark-starry-sky-1694000/

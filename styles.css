@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-image: url(images/dark-starry.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background-color: gray;
+    height: 100vh;
+    font-size: 16px;
+}
+
+/* TEXT */
+h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+/* NAVBAR */
+nav {
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0 50px;
+}
+
+.nav-btn {
+    margin: 0 10px;
+    padding: 10px 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.nav-btn:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    padding: 0 10px;
+}
+
+.test {
+    height: 100vh;
+}
