@@ -6,13 +6,13 @@
 }
 
 body {
-    /* background-image: url(images/dark-starry.jpg);
-    background-size: cover;
+    background-image: url(images/dark-starry.jpg);
     background-position: center;
-    background-repeat: no-repeat; */
-    background-color: gray;
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* TEXT */
@@ -21,14 +21,30 @@ h1 {
     font-size: 3rem;
 }
 
+h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+p {
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
 /* NAVBAR */
 nav {
     background-color: rgb(66, 66, 66);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 .nav-list {
@@ -44,17 +60,53 @@ nav {
     color: white;
     border: none;
     cursor: pointer;
-    
 }
 
 .nav-btn:hover {
     text-decoration: underline;
 }
 
+/* LOGO */
 .logo {
     padding: 0 10px;
 }
 
-.test {
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
     height: 100vh;
+}
+
+.hero-text_container {
+    position: relative;
+    left: 40px;
+    z-index: 1;
+}
+
+.hero p {
+    max-width: 50ch;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 0 10px;
+
+}
+
+.hero-image {
+    position: relative;
+    right: 40px;
+}
+
+
+/* MAIN */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* SECTIONS */
+section {
+    height: 100vh;
+    width: 800px;
 }
