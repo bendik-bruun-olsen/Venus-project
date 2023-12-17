@@ -23,7 +23,7 @@ h1 {
 
 h2 {
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 p {
@@ -80,20 +80,27 @@ nav {
 
 .hero-text_container {
     position: relative;
-    left: 40px;
+    left: 60px;
     z-index: 1;
+}
+
+.hero h2 {
+    padding: 0 0 10px 0;
+    letter-spacing: 0.2rem;
 }
 
 .hero p {
     max-width: 50ch;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     padding: 0 10px;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
 
 }
 
 .hero-image {
     position: relative;
-    right: 40px;
+    right: 60px;
 }
 
 
@@ -107,6 +114,6 @@ main {
 
 /* SECTIONS */
 section {
-    height: 100vh;
+    min-height: 100vh;
     width: 800px;
 }
