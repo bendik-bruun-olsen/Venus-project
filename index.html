@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="images/favicon-venus.png">
+    <script src="javascript.js"></script>
     <title>Venus</title>
   </head>
   <body>
@@ -34,17 +35,49 @@
       </div>
     </header>
     <main>
-      <section class="facts" id="facts-id" style="background-color:blue">
-        <h2>Test</h2>
+      <section class="sections" id="facts-id" style="background-color:blue">
+        <h2>Facts</h2>
       </section>
-      <section class="gallery" id="gallery-id" style="background-color: aqua;">
-        <h2>Test</h2>
+      <!-- Gallery section -->
+      <section class="sections" id="gallery-id" style="background-color: rgb(70, 70, 70);">
+        <h2>Gallery</h2>
+        <!-- Slideshow -->
+        <div class="slideshow-container fade">
+          <div class="slideshow-item">
+            <img src="images/milky-way.jpg" style="width: 100%">
+            <div class="info-text">Test</div>
+          </div>
+          <div class="slideshow-item">
+            <img src="images/night-time.jpg" style="width: 100%">
+            <div class="info-text">Test test</div>
+          </div>
+          <div class="slideshow-item">
+            <img src="images/time-lapse.jpg" style="width: 100%">
+            <div class="info-text">Test test test </div>
+          </div>
+          <div class="slideshow-item">
+            <img src="images/dark-starry.jpg" style="width: 100%">
+            <div class="info-text">Test test test test </div>
+          </div>
+          <!-- Slideshow buttons -->
+          <a class="back" onclick="slideChange(-1)">&#10094;</a>
+          <a class="forward" onclick="slideChange(1)">&#10095;</a>
+        </div>
+        <!-- Slideshow dots -->
+        <div class="dots-container">
+          <span class="dots" onclick="currentSlide(1)"></span>
+          <span class="dots" onclick="currentSlide(2)"></span>
+          <span class="dots" onclick="currentSlide(3)"></span>
+          <span class="dots" onclick="currentSlide(4)"></span>
+        </div>
       </section>
-      <section class="stories" id="stories-id" style="background-color: rgb(115, 255, 0);">
-        <h2>Test</h2>
+      <!-- Stories section -->
+      <section class="sections" id="stories-id" style="background-color: rgb(115, 255, 0);">
+        <h2>Stories</h2>
       </section>
-      <section class="sources" id="sources-id" style="background-color: rgb(204, 191, 14);">
-        <h2>Test</h2>
+      <!-- Sources section -->
+      <section class="sections" id="sources-id" style="background-color: rgb(204, 191, 14);">
+        <h2>Sources</h2>
       </section>
     </main>
     <footer>
