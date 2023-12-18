@@ -30,7 +30,7 @@ h2 {
   color: white;
   font-size: 3rem;
   text-align: center;
-  margin: 20px 0;
+  padding-bottom: 20px;
 }
 
 p {
@@ -45,6 +45,7 @@ header {
 /* NAVBAR */
 nav {
   background-image: linear-gradient(to top, rgb(48, 48, 48), rgb(66, 66, 66));
+  border-bottom: solid 1px black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,9 +126,15 @@ main {
   padding-top: 50px;
 }
 
+.content-wrapper {
+  background-color: rgb(55, 55, 55);
+  border-radius: 50px;
+  padding: 20px 0;
+}
+
 /* SLIDESHOW */
 .slideshow-container {
-  max-width: 100%;
+  max-width: 90%;
   position: relative;
   margin: auto;
 }

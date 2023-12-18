@@ -55,40 +55,38 @@
         <h2>Facts</h2>
       </section>
       <!-- Gallery section -->
-      <section
-        class="sections"
-        id="gallery-id"
-        style="background-color: rgb(70, 70, 70)"
-      >
-        <h2>Gallery</h2>
-        <!-- Slideshow -->
-        <div class="slideshow-container">
-          <div class="slideshow-item fade">
-            <img src="images/milky-way.jpg" style="width: 100%" />
-            <div class="info-text">Test</div>
+      <section class="sections" id="gallery-id">
+        <div class="content-wrapper">
+          <h2>Gallery</h2>
+          <!-- Slideshow -->
+          <div class="slideshow-container">
+            <div class="slideshow-item fade">
+              <img src="images/milky-way.jpg" style="width: 100%" />
+              <div class="info-text">Test</div>
+            </div>
+            <div class="slideshow-item fade">
+              <img src="images/night-time.jpg" style="width: 100%" />
+              <div class="info-text">Test test</div>
+            </div>
+            <div class="slideshow-item fade">
+              <img src="images/time-lapse.jpg" style="width: 100%" />
+              <div class="info-text">Test test test</div>
+            </div>
+            <div class="slideshow-item fade">
+              <img src="images/dark-starry.jpg" style="width: 100%" />
+              <div class="info-text">Test test test test</div>
+            </div>
+            <!-- Slideshow buttons -->
+            <a class="back" onclick="slideChange(-1)">&#10094;</a>
+            <a class="forward" onclick="slideChange(1)">&#10095;</a>
           </div>
-          <div class="slideshow-item fade">
-            <img src="images/night-time.jpg" style="width: 100%" />
-            <div class="info-text">Test test</div>
+          <!-- Slideshow dots -->
+          <div class="dots-container">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+            <span class="dots" onclick="currentSlide(4)"></span>
           </div>
-          <div class="slideshow-item fade">
-            <img src="images/time-lapse.jpg" style="width: 100%" />
-            <div class="info-text">Test test test</div>
-          </div>
-          <div class="slideshow-item fade">
-            <img src="images/dark-starry.jpg" style="width: 100%" />
-            <div class="info-text">Test test test test</div>
-          </div>
-          <!-- Slideshow buttons -->
-          <a class="back" onclick="slideChange(-1)">&#10094;</a>
-          <a class="forward" onclick="slideChange(1)">&#10095;</a>
-        </div>
-        <!-- Slideshow dots -->
-        <div class="dots-container">
-          <span class="dots" onclick="currentSlide(1)"></span>
-          <span class="dots" onclick="currentSlide(2)"></span>
-          <span class="dots" onclick="currentSlide(3)"></span>
-          <span class="dots" onclick="currentSlide(4)"></span>
         </div>
       </section>
       <!-- Stories section -->
