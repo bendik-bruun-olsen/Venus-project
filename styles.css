@@ -5,13 +5,16 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  font-size: 16px;
+}
+
 body {
   background-image: url(images/dark-starry.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-size: 16px;
   display: flex;
   flex-direction: column;
 }
@@ -20,6 +23,7 @@ body {
 h1 {
   color: white;
   font-size: 3rem;
+  user-select: none;
 }
 
 h2 {
@@ -130,27 +134,26 @@ main {
 
 .slideshow-item {
   display: none;
+  transition: all 4s ease;
 }
 
 .back,
 .forward {
   cursor: pointer;
   position: absolute;
-  top: 48%;
-  width: auto;
-  margin-top: -23px;
-  padding: 17px;
+  top: 44%;
+  padding: 11px 17px 17px 17px;
   color: grey;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 3rem;
   transition: 0.4s ease;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 10px 10px 0;
   user-select: none;
 }
 
 .forward {
   right: 0;
-  border-radius: 4px 0 0 4px;
+  border-radius: 10px 0 0 10px;
 }
 
 .back:hover,
@@ -175,18 +178,18 @@ main {
 
 .dots {
   cursor: pointer;
-  height: 16px;
-  width: 16px;
-  margin: 0 3px;
+  height: 1rem;
+  width: 1rem;
+  margin: 3px 3px;
   background-color: #717161;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .enable,
 .dots:hover {
-  background-color: #aac;
+  background-color: rgb(196, 196, 196);
 }
 
 .fade {
@@ -199,6 +202,6 @@ main {
     opacity: 0.5;
   }
   to {
-    opacity: 2;
+    opacity: 1;
   }
 }
