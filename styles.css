@@ -141,7 +141,12 @@ main {
 
 .slideshow-item {
   display: none;
+  overflow: hidden;
   transition: all 4s ease;
+}
+
+.slideshow-item img {
+  width: 100%;
 }
 
 .back,
@@ -199,16 +204,13 @@ main {
   background-color: rgb(196, 196, 196);
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.4s;
+.test {
+  background-color: darkblue;
+  width: 100px;
+  height: 100px;
+  transition: transform 1s ease;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 1;
-  }
+.test:hover {
+  transform: translateX(100%);
 }
