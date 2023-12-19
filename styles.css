@@ -149,8 +149,8 @@ main {
   width: 100%;
 }
 
-.back,
-.forward {
+#back,
+#next {
   cursor: pointer;
   position: absolute;
   top: 44%;
@@ -163,13 +163,13 @@ main {
   user-select: none;
 }
 
-.forward {
+#next {
   right: 0;
   border-radius: 10px 0 0 10px;
 }
 
-.back:hover,
-.forward:hover {
+#back:hover,
+#next:hover {
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
 }
