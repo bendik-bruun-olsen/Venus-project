@@ -135,6 +135,7 @@ main {
 /* SLIDESHOW */
 .slideshow-container {
   max-width: 90%;
+  height: 500px;
   position: relative;
   margin: auto;
   overflow: hidden;
@@ -144,7 +145,6 @@ main {
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: transform 1s ease-in;
 }
 
 .slideshow-item img {
@@ -163,6 +163,7 @@ main {
   transition: 0.4s ease;
   border-radius: 0 10px 10px 0;
   user-select: none;
+  z-index: 2;
 }
 
 #next {
@@ -176,6 +177,38 @@ main {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Slideshow animation */
+@keyframes slideIn {
+100% {left: 0;}
+}
+
+.slideInRight {
+  left: -100%;
+  animation: slideIn 0.5s ease forwards;
+}
+
+.slideInLeft {
+  left: 100%;
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideOutLeft {
+  100% {left: -100%;}
+}
+
+.slideOutLeft {
+  animation: slideOutLeft 0.5s ease forwards;
+}
+
+@keyframes slideOutRight {
+  100% {left: 100%;}
+}
+
+.slideOutRight {
+  animation: slideOutRight 0.5s ease forwards;
+}
+
+/* Slideshow text and dots */
 .info-text {
   color: #e3e3e3;
   font-size: 16px;
