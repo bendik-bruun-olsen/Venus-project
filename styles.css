@@ -137,12 +137,14 @@ main {
   max-width: 90%;
   position: relative;
   margin: auto;
+  overflow: hidden;
 }
 
 .slideshow-item {
-  display: none;
-  overflow: hidden;
-  transition: all 4s ease;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in;
 }
 
 .slideshow-item img {
@@ -202,15 +204,4 @@ main {
 .enable,
 .dots:hover {
   background-color: rgb(196, 196, 196);
-}
-
-.test {
-  background-color: darkblue;
-  width: 100px;
-  height: 100px;
-  transition: transform 1s ease;
-}
-
-.test:hover {
-  transform: translateX(100%);
 }
