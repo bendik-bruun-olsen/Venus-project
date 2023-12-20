@@ -1,0 +1,7 @@
+Venera-photo:
+Link: planetary.org
+Text: Surface of Venus. Captured in 1982 by Venera 13, a USSR space probe.
+
+Venera-artist:
+Link: planetary.org
+Text: Artist's impression of Venera 13 (CGI)
