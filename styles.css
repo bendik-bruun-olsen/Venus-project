@@ -3,10 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 :root {
@@ -34,9 +30,6 @@ h1 {
   color: white;
   font-size: 3rem;
   user-select: none;
-  color: white;
-  font-size: 3rem;
-  user-select: none;
 }
 
 h2 {
@@ -59,22 +52,10 @@ p {
 header {
   display: flex;
   justify-content: center;
-  display: flex;
-  justify-content: center;
 }
 
 /* NAVBAR */
 nav {
-  background-image: linear-gradient(to top, rgb(48, 48, 48), rgb(66, 66, 66));
-  border-bottom: solid 1px black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  height: 50px;
   background-image: linear-gradient(to top, rgb(48, 48, 48), rgb(66, 66, 66));
   border-bottom: solid 1px black;
   display: flex;
@@ -91,18 +72,9 @@ nav {
   list-style: none;
   display: flex;
   margin: 0 50px;
-  list-style: none;
-  display: flex;
-  margin: 0 50px;
 }
 
 .nav-btn {
-  margin: 0 10px;
-  padding: 10px 10px;
-  background-color: transparent;
-  color: white;
-  border: none;
-  cursor: pointer;
   margin: 0 10px;
   padding: 10px 10px;
   background-color: transparent;
@@ -113,12 +85,10 @@ nav {
 
 .nav-btn:hover {
   text-decoration: underline;
-  text-decoration: underline;
 }
 
 /* LOGO */
 .logo {
-  padding: 0 10px;
   padding: 0 10px;
 }
 
@@ -127,15 +97,9 @@ nav {
   display: flex;
   align-items: center;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  height: 100vh;
 }
 
 .hero-text_container {
-  position: relative;
-  left: 60px;
-  z-index: 1;
   position: relative;
   left: 60px;
   z-index: 1;
@@ -159,16 +123,10 @@ nav {
 .hero-image {
   position: relative;
   right: 60px;
-  position: relative;
-  right: 60px;
 }
 
 /* MAIN */
 main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   display: flex;
   flex-direction: column;
