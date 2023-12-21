@@ -6,6 +6,7 @@
 }
 
 :root {
+  font-size: 16px;
   --night: #080a0c;
   --copper: #c06f35;
   --smokywhite: #f6f4f5;
@@ -20,7 +21,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-size: 16px;
   display: flex;
   flex-direction: column;
 }
@@ -29,10 +29,11 @@ body {
 h1 {
   color: white;
   font-size: 3rem;
+  user-select: none;
 }
 
 h2 {
-  color: #080a0c;
+  color: var(--night);
   font-size: 3rem;
   text-align: center;
   margin: 20px 0;
@@ -44,7 +45,7 @@ h3 {
 }
 
 p {
-  color: rgb(13, 12, 12);
+  color: var(--night);
   line-height: 1.3;
 }
 
@@ -56,6 +57,7 @@ header {
 /* NAVBAR */
 nav {
   background-image: linear-gradient(to top, rgb(48, 48, 48), rgb(66, 66, 66));
+  border-bottom: solid 1px black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,7 +108,7 @@ nav {
 .hero h2 {
   padding: 0 0 10px 0;
   letter-spacing: 0.2rem;
-  color: white;
+  color: var(--smokywhite);
 }
 
 .hero p {
@@ -115,7 +117,7 @@ nav {
   padding: 0 10px;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
-  color: white;
+  color: var(--smokywhite);
 }
 
 .hero-image {
@@ -198,87 +200,6 @@ main {
   padding: 5px 20px;
   display: none;
   background-color: whitesmoke;
-}
-
-/* SLIDESHOW */
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-.slideshow-item {
-  display: none;
-}
-
-.back,
-.forward {
-  cursor: pointer;
-  position: absolute;
-  top: 48%;
-  width: auto;
-  margin-top: -23px;
-  padding: 17px;
-  color: grey;
-  font-weight: bold;
-  font-size: 19px;
-  transition: 0.4s ease;
-  border-radius: 0 5px 5px 0;
-  user-select: none;
-}
-
-.forward {
-  right: 0;
-  border-radius: 4px 0 0 4px;
-}
-
-.back:hover,
-.forward:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.info-text {
-  color: #e3e3e3;
-  font-size: 16px;
-  padding: 10px 14px;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
-}
-
-.dots-container {
-  text-align: center;
-}
-
-.dots {
-  cursor: pointer;
-  height: 16px;
-  width: 16px;
-  margin: 0 3px;
-  background-color: #aac;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.5s ease;
-}
-
-.enable,
-.dots:hover {
-  background-color: #717161;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.4s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 2;
-  }
 }
 
 /* Stories */
