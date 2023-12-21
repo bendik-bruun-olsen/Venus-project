@@ -112,7 +112,7 @@ nav {
 }
 
 .hero p {
-  max-width: 50ch;
+  max-width: 60ch;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   padding: 0 10px;
   font-size: 1.5rem;
@@ -143,12 +143,8 @@ main {
   min-height: 100vh;
   width: 1000px;
   padding-top: 50px;
-}
-
-.content-wrapper {
-  background-color: rgb(55, 55, 55);
-  border-radius: 50px;
-  padding: 20px 0;
+  margin: 0 0 40px 0;
+  border-radius: 20px;
 }
 
 /* Facts */
@@ -157,18 +153,19 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 
 #video {
-  width: 420px;
-  height: 345px;
+  width: 73%;
+  min-height: 420px;
   border: none;
   padding: 20px;
 }
 
 .list {
   background-image: linear-gradient(to top, rgb(48, 48, 48), rgb(66, 66, 66));
-  width: 80%;
+  width: 70%;
   list-style: none;
   padding: 20px;
   border-radius: 10px;
@@ -203,7 +200,7 @@ main {
 
 .content {
   width: 100%;
-  padding: 5px 20px;
+  padding: 15px 20px;
   display: none;
   background-color: whitesmoke;
 }

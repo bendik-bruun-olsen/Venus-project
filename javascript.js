@@ -1,4 +1,4 @@
-window.onload = function () {
+window.addEventListener("DOMContentLoaded", (event) => {
   const next = document.getElementById("next");
   const back = document.getElementById("back");
   const slides = document.getElementsByClassName("slideshow-item");
@@ -96,4 +96,4 @@ window.onload = function () {
     slides[index].classList.add("slideOutRight");
     slides[prevIndex].classList.add("slideInLeft");
   }
-};
+});

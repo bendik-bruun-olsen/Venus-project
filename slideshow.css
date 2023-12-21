@@ -1,4 +1,11 @@
 /* SLIDESHOW */
+.slideshow-wrapper {
+  background-color: var(--gray);
+  border-radius: 50px;
+  padding: 20px 0;
+  width: 90%;
+}
+
 .slideshow-container {
   max-width: 90%;
   height: 500px;
@@ -15,6 +22,7 @@
 
 .slideshow-item img {
   width: 100%;
+  height: 100%;
 }
 
 #back,
@@ -52,12 +60,12 @@
 
 .slideInRight {
   left: -100%;
-  animation: slideIn 0.5s ease forwards;
+  animation: slideIn 0.6s ease-out forwards;
 }
 
 .slideInLeft {
   left: 100%;
-  animation: slideIn 0.5s ease forwards;
+  animation: slideIn 0.6s ease-out forwards;
 }
 
 @keyframes slideOutLeft {
@@ -67,7 +75,7 @@
 }
 
 .slideOutLeft {
-  animation: slideOutLeft 0.5s ease forwards;
+  animation: slideOutLeft 0.6s ease-out forwards;
 }
 
 @keyframes slideOutRight {
@@ -77,7 +85,7 @@
 }
 
 .slideOutRight {
-  animation: slideOutRight 0.5s ease forwards;
+  animation: slideOutRight 0.6s ease-out forwards;
 }
 
 /* Slideshow text and dots */
