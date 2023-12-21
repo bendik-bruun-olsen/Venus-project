@@ -5,6 +5,15 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --night: #080a0c;
+  --copper: #c06f35;
+  --smokywhite: #f6f4f5;
+  --silver: #b8b8b8;
+  --oxfordblue: #00133d;
+  --gray: #596673;
+}
+
 body {
   background-image: url(images/backgrounds/background2.jpg);
   background-position: center;
@@ -124,11 +133,10 @@ main {
 
 /* SECTIONS */
 .sections {
-  background-image: linear-gradient(
-    to top,
-    rgb(243, 245, 246),
-    rgb(173, 188, 194),
-    rgb(243, 245, 246)
+  background: radial-gradient(
+    circle,
+    rgba(176, 179, 181, 1) 0%,
+    rgba(155, 176, 214, 1) 100%
   );
   min-height: 100vh;
   width: 1000px;
@@ -288,11 +296,6 @@ main {
   height: 300px;
   margin-right: 20px;
 }
-
-/* footer {
-  display: flex;
-  justify-content: space-between;
-} */
 
 .venus-footer {
   display: flex;
