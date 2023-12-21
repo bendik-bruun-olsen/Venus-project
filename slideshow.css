@@ -1,9 +1,21 @@
 /* SLIDESHOW */
+#gallery-id {
+  display: flex;
+  justify-content: center;
+}
+
 .slideshow-wrapper {
   background-color: var(--gray);
-  border-radius: 50px;
-  padding: 20px 0;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 20px 20px;
   width: 90%;
+  height: 100%;
+  box-shadow: 3px 5px 10px var(--oxfordblue);
+}
+
+.slideshow-wrapper h2 {
+  margin-top: 0;
 }
 
 .slideshow-container {
@@ -12,6 +24,7 @@
   position: relative;
   margin: auto;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .slideshow-item {
@@ -31,7 +44,7 @@
   position: absolute;
   top: 44%;
   padding: 11px 17px 17px 17px;
-  color: grey;
+  color: var(--silver);
   font-weight: bold;
   font-size: 3rem;
   transition: 0.4s ease;
@@ -47,7 +60,7 @@
 
 #back:hover,
 #next:hover {
-  color: white;
+  color: var(--smokywhite);
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -90,8 +103,6 @@
 
 /* Slideshow text and dots */
 .info-text {
-  color: #e3e3e3;
-  font-size: 16px;
   padding: 10px 14px;
   position: absolute;
   bottom: 10px;
@@ -99,8 +110,16 @@
   text-align: center;
 }
 
+.info-text p {
+  color: var(--smokywhite);
+  text-shadow: 0 0 5px black;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
 .dots-container {
   text-align: center;
+  padding-top: 20px;
 }
 
 .dots {
@@ -116,5 +135,5 @@
 
 .enable,
 .dots:hover {
-  background-color: rgb(196, 196, 196);
+  background-color: var(--smokywhite);
 }

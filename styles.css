@@ -75,16 +75,19 @@ nav {
 }
 
 .nav-btn {
-  margin: 0 10px;
-  padding: 10px 10px;
+  margin: 0 5px;
+  padding: 10px 15px;
   background-color: transparent;
-  color: white;
-  border: none;
+  color: var(--smokywhite);
   cursor: pointer;
+  border: 0;
+  border-radius: 10px;
 }
 
 .nav-btn:hover {
-  text-decoration: underline;
+  background-color: var(--gray);
+  box-shadow: 0 0 10px var(--gray);
+  transition: all 0.3s ease;
 }
 
 /* LOGO */
@@ -101,28 +104,30 @@ nav {
 
 .hero-text_container {
   position: relative;
-  left: 60px;
+  left: 190px;
   z-index: 1;
 }
 
 .hero h2 {
   padding: 0 0 10px 0;
   letter-spacing: 0.2rem;
+  text-align: left;
   color: var(--smokywhite);
+  margin: 0;
 }
 
 .hero p {
   max-width: 60ch;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   padding: 0 10px;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   color: var(--smokywhite);
+  text-shadow: 0px 0px 5px var(--oxfordblue);
 }
 
 .hero-image {
   position: relative;
-  right: 60px;
+  right: 80px;
 }
 
 /* MAIN */
@@ -237,4 +242,31 @@ main {
 
 .venus-footer a:hover {
   text-decoration: underline;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-rows: 30px auto;
+  grid-template-columns: 100px auto;
+  gap: 10px
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--silver);
+  border-radius: 5px;
+}
+
+.grid-item a {
+  margin: 0 10px;
+}
+
+.grid-title {
+  display: grid;
+  grid-column: span 2;
+  height: 30px;
+  padding: 0 10px;
+  margin-top: 10px;
 }
