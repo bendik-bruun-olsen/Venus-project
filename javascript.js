@@ -5,7 +5,7 @@ window.onload = function () {
   const dots = document.getElementsByClassName("dots");
 
   let index = 0;
-  slides[index].style.zIndex = 2;
+  slides[index].style.zIndex = 1;
   updateDot();
 
   next.addEventListener("click", (e) => {
@@ -32,7 +32,7 @@ window.onload = function () {
     }
   }
 
-  function updateDot () {
+  function updateDot() {
     for (let i = 0; i < dots.length; i++) {
       dots[i].classList.remove("enable");
     }
@@ -44,13 +44,17 @@ window.onload = function () {
     let nextIndex;
     if (index === slides.length - 1) {
       nextIndex = 0;
-    }
-    else {
-      nextIndex = (index + 1);
+    } else {
+      nextIndex = index + 1;
     }
 
     for (let i = 0; i < slides.length; i++) {
-      slides[i].classList.remove("slideOutLeft", "slideInRight", "slideOutRight", "slideInLeft");
+      slides[i].classList.remove(
+        "slideOutLeft",
+        "slideInRight",
+        "slideOutRight",
+        "slideInLeft"
+      );
       slides[i].style.zIndex = 0;
     }
 
@@ -65,17 +69,21 @@ window.onload = function () {
   }
 
   // Slide to previous image
-  function prevSlide () {
+  function prevSlide() {
     let prevIndex;
     if (index === 0) {
-      prevIndex = (slides.length - 1);
-    }
-    else {
-      prevIndex = (index - 1)
+      prevIndex = slides.length - 1;
+    } else {
+      prevIndex = index - 1;
     }
 
     for (let i = 0; i < slides.length; i++) {
-      slides[i].classList.remove("slideOutRight", "slideInLeft", "slideOutLeft", "slideInRight");
+      slides[i].classList.remove(
+        "slideOutRight",
+        "slideInLeft",
+        "slideOutLeft",
+        "slideInRight"
+      );
       slides[i].style.zIndex = 0;
     }
 
@@ -88,4 +96,4 @@ window.onload = function () {
     slides[index].classList.add("slideOutRight");
     slides[prevIndex].classList.add("slideInLeft");
   }
-}
+};
