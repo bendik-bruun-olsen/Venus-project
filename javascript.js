@@ -1,33 +1,99 @@
-slideshow(slidePos);
+window.onload = function () {
+  const next = document.getElementById("next");
+  const back = document.getElementById("back");
+  const slides = document.getElementsByClassName("slideshow-item");
+  const dots = document.getElementsByClassName("dots");
 
-function slideChange(n) {
-  slideshow((slidePos += n));
-}
+  let index = 0;
+  slides[index].style.zIndex = 1;
+  updateDot();
 
-function currentSlide(n) {
-  slideshow((slidePos = n));
-}
+  next.addEventListener("click", (e) => {
+    nextSlide();
+    updateIndex(1);
+    updateDot();
+  });
 
-function slideshow(n) {
-  var i;
-  var slides = document.getElementsByClassName("slideshow-item");
-  var circles = document.getElementsByClassName("dots");
+  back.addEventListener("click", (e) => {
+    prevSlide();
+    updateIndex(-1);
+    updateDot();
+  });
 
-  if (n > slides.length) {
-    slidePos = 1;
+  function updateIndex(n) {
+    index += n;
+    // If more than max reached
+    if (index > slides.length - 1) {
+      index = 0;
+    }
+    // If less than min reached
+    else if (index < 0) {
+      index = slides.length - 1;
+    }
   }
 
-  if (n < 1) {
-    slidePos = slides.length;
+  function updateDot() {
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("enable");
+    }
+    dots[index].classList.add("enable");
   }
 
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  // Slide to next image
+  function nextSlide() {
+    let nextIndex;
+    if (index === slides.length - 1) {
+      nextIndex = 0;
+    } else {
+      nextIndex = index + 1;
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].classList.remove(
+        "slideOutLeft",
+        "slideInRight",
+        "slideOutRight",
+        "slideInLeft"
+      );
+      slides[i].style.zIndex = 0;
+    }
+
+    slides[index].style.zIndex = 1;
+    slides[nextIndex].style.zIndex = 1;
+
+    slides[index].style.left = 0;
+    slides[nextIndex].style.left = "100%";
+
+    slides[index].classList.add("slideOutLeft");
+    slides[nextIndex].classList.add("slideInRight");
   }
 
-  for (i = 0; i < circles.length; i++) {
-    circles[i].className = circles[i].className.replace(" enable", "");
+  // Slide to previous image
+  function prevSlide() {
+    let prevIndex;
+    if (index === 0) {
+      prevIndex = slides.length - 1;
+    } else {
+      prevIndex = index - 1;
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].classList.remove(
+        "slideOutRight",
+        "slideInLeft",
+        "slideOutLeft",
+        "slideInRight"
+      );
+      slides[i].style.zIndex = 0;
+    }
+
+    slides[index].style.zIndex = 1;
+    slides[prevIndex].style.zIndex = 1;
+
+    slides[index].style.left = 0;
+    slides[prevIndex].style.left = "-100%";
+
+    slides[index].classList.add("slideOutRight");
+    slides[prevIndex].classList.add("slideInLeft");
   }
-  slides[slidePos - 1].style.display = "block";
-  circles[slidePos - 1].className += " enable";
-}
+};

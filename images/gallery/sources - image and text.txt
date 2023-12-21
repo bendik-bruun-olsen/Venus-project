@@ -1,0 +1,23 @@
+Venera-photo:
+Link: planetary.org
+Text: Surface of Venus. Captured in 1982 by Venera 13, a USSR space probe.
+
+Venera-artist:
+Link: planetary.org
+Text: Artist's impression of Venera 13 (CGI)
+
+venus-outer:
+Link: https://science.nasa.gov/venus/
+Text: Venus. Captured by NASAs Mariner 10 in 1973
+
+venus-surface:
+Link: https://photojournal.jpl.nasa.gov/targetFamily/venus
+Text: A volcano. Captured by NASAs Magellan spacecraft with radar-mapping, in 1994. 
+
+venus-moon:
+Link: https://www.mercurynews.com/2020/02/27/venus-and-the-moon-whats-going-on-in-the-sky-tonight/
+Text: Venus next to the moon.
+
+venus-sun:
+Link: https://www.rmg.co.uk/stories/topics/interesting-facts-about-venus
+Text: Venus passing infront of the sun.

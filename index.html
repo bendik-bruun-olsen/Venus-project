@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="slideshow.css" />
     <link rel="icon" type="image/x-icon" href="images/favicon-venus.png" />
     <script src="javascript.js"></script>
     <script src="expanding.js"></script>
@@ -32,12 +33,34 @@
           <li>
             <a href="#sources-id"><button class="nav-btn">Sources</button></a>
           </li>
+          <li>
+            <a href="#home-id"><button class="nav-btn">Home</button></a>
+          </li>
+          <li>
+            <a href="#facts-id"><button class="nav-btn">Facts</button></a>
+          </li>
+          <li>
+            <a href="#gallery-id"><button class="nav-btn">Gallery</button></a>
+          </li>
+          <li>
+            <a href="#stories-id"><button class="nav-btn">Stories</button></a>
+          </li>
+          <li>
+            <a href="#sources-id"><button class="nav-btn">Sources</button></a>
+          </li>
         </ul>
       </nav>
       <!-- hero -->
       <div class="hero" id="home-id">
         <div class="hero-text_container">
           <h2>Venus</h2>
+          <p>
+            Earth's closest planetary neighbor, is the second planet from the
+            Sun and shares similarities in size and composition. Experiencing an
+            extreme greenhouse effect, it boasts surface temperatures hotter
+            than Mercury, making it the
+            <strong>hottest planet in the solar system.</strong>
+          </p>
           <p>
             Earth's closest planetary neighbor, is the second planet from the
             Sun and shares similarities in size and composition. Experiencing an
@@ -180,35 +203,37 @@
 
       <!-- Gallery section -->
       <section class="sections" id="gallery-id">
-        <h2>Gallery</h2>
-        <!-- Slideshow -->
-        <div class="slideshow-container fade">
-          <div class="slideshow-item">
-            <img src="images/milky-way.jpg" style="width: 100%" />
-            <div class="info-text">Test</div>
+        <div class="content-wrapper">
+          <h2>Gallery</h2>
+          <!-- Slideshow -->
+          <div class="slideshow-container">
+            <div class="slideshow-item">
+              <img src="images/milky-way.jpg" />
+              <div class="info-text">Test</div>
+            </div>
+            <div class="slideshow-item">
+              <img src="images/night-time.jpg" />
+              <div class="info-text">Test test</div>
+            </div>
+            <div class="slideshow-item">
+              <img src="images/time-lapse.jpg" />
+              <div class="info-text">Test test test</div>
+            </div>
+            <div class="slideshow-item">
+              <img src="images/dark-starry.jpg" />
+              <div class="info-text">Test test test test</div>
+            </div>
+            <!-- Slideshow buttons -->
+            <a id="back">&#10094;</a>
+            <a id="next">&#10095;</a>
           </div>
-          <div class="slideshow-item">
-            <img src="images/night-time.jpg" style="width: 100%" />
-            <div class="info-text">Test test</div>
+          <!-- Slideshow dots -->
+          <div class="dots-container">
+            <span class="dots"></span>
+            <span class="dots"></span>
+            <span class="dots"></span>
+            <span class="dots"></span>
           </div>
-          <div class="slideshow-item">
-            <img src="images/time-lapse.jpg" style="width: 100%" />
-            <div class="info-text">Test test test</div>
-          </div>
-          <div class="slideshow-item">
-            <img src="images/dark-starry.jpg" style="width: 100%" />
-            <div class="info-text">Test test test test</div>
-          </div>
-          <!-- Slideshow buttons -->
-          <a class="back" onclick="slideChange(-1)">&#10094;</a>
-          <a class="forward" onclick="slideChange(1)">&#10095;</a>
-        </div>
-        <!-- Slideshow dots -->
-        <div class="dots-container">
-          <span class="dots" onclick="currentSlide(1)"></span>
-          <span class="dots" onclick="currentSlide(2)"></span>
-          <span class="dots" onclick="currentSlide(3)"></span>
-          <span class="dots" onclick="currentSlide(4)"></span>
         </div>
       </section>
 
