@@ -275,15 +275,18 @@ hr {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 5px;
   background-color: #322e2e;
   border-top: solid 1px var(--copper);
 }
 
 .venus-footer a {
-  padding: 5px;
   text-decoration: none;
   color: white;
+  padding: 0 5px 5px 5px;
+}
+
+.venus-footer h2 {
+  margin: 5px 0;
 }
 
 #logo h2 {
