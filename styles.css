@@ -17,6 +17,8 @@
   --gray: #596673;
   --cadetgray: #8099ae;
   --powderblue: #74899a;
+  --jordyblue: #99b9ff;
+  --darkergray: #3e4651;
 }
 
 body {
@@ -38,7 +40,7 @@ h1 {
 }
 
 h2 {
-  color: var(--oxfordblue);
+  color: var(--darkergray);
   font-size: 3rem;
   text-align: center;
   margin: 20px 0;
@@ -114,7 +116,7 @@ nav {
 
 .hero-text_container {
   position: relative;
-  left: 190px;
+  bottom: 30px;
   z-index: 1;
 }
 
@@ -127,7 +129,7 @@ nav {
 }
 
 .hero p {
-  max-width: 60ch;
+  max-width: 45ch;
   padding: 0 10px;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
@@ -137,7 +139,6 @@ nav {
 
 .hero-image {
   position: relative;
-  right: 80px;
 }
 
 /* MAIN */
@@ -159,7 +160,7 @@ main {
   );
   min-height: 100vh;
   width: 1000px;
-  padding-top: 50px;
+  padding: 50px 0;
   margin: 0 0 40px 0;
   border-radius: 20px;
   border: solid 2px var(--copper);
