@@ -17,6 +17,8 @@
   --gray: #596673;
   --cadetgray: #8099ae;
   --powderblue: #74899a;
+  --jordyblue: #99b9ff;
+  --darkergray: #3e4651;
 }
 
 body {
@@ -38,7 +40,7 @@ h1 {
 }
 
 h2 {
-  color: var(--oxfordblue);
+  color: var(--darkergray);
   font-size: 3rem;
   text-align: center;
   margin: 20px 0;
