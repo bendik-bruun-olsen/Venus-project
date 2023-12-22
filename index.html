@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="slideshow.css" />
+
     <link rel="icon" type="image/x-icon" href="images/favicon-venus.png" />
     <script src="javascript.js"></script>
     <script src="expanding.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Open+Sans:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Venus</title>
   </head>
   <body>
@@ -28,7 +35,7 @@
             <a href="#gallery-id"><button class="nav-btn">Gallery</button></a>
           </li>
           <li>
-            <a href="#stories-id"><button class="nav-btn">Stories</button></a>
+            <a href="#articles-id"><button class="nav-btn">Articles</button></a>
           </li>
           <li>
             <a href="#sources-id"><button class="nav-btn">Sources</button></a>
@@ -235,55 +242,76 @@
       </section>
 
       <!-- Stories section -->
-      <section class="sections" id="stories-id">
-        <h2>Stories</h2>
-        <div id="stories-container">
-          <div class="story">
+      <section class="sections" id="articles-id">
+        <h2>Articles</h2>
+        <div id="articles-container">
+          <div class="article">
             <div>
               <img
-                src="images/Articles/Nasa-davinci-mission.jpg"
-                alt="Davinci-mission"
-              />
-            </div>
-            <div>
-              <h3>
-                Nasa's DAVINCI Mission to take the plunge through Massive
-                atmosphere of Venus
-              </h3>
-              <p>
-                In recently publishedd paper, Nasa scientists and engineer give
-                new details about the agency's deep atmosphere Venus
-                investigation of the Noble gases,Chemistry , and imaging
-                (DAVINCI) mission, which will descend through the layered Venus
-                atmosphere to the surface of the planet in mid-2031.
-              </p>
-              <a
-                href="https://www.nasa.gov/centers-and-facilities/goddard/nasas-davinci-mission-to-take-the-plunge-through-massive-atmosphere-of-venus/"
-                target="_blank"
-                >Read more</a
-              >
-            </div>
-          </div>
-
-          <div class="story">
-            <div>
-              <img
-                src="images/Articles/Venus volcano.jpg"
+                src="images/Articles/Venus-volcano2.jpg"
                 alt="Volcano activity"
               />
             </div>
             <div>
-              <h3>NASA’s Magellan Data Reveals Volcanic Activity on Venus</h3>
+              <a
+                href="https://www.nasa.gov/missions/veritas/nasas-magellan-data-reveals-volcanic-activity-on-venus/"
+                target="_blank"
+                ><h3>
+                  NASA’s Magellan Data Reveals Volcanic Activity on Venus
+                </h3></a
+              >
               <p>
                 In a first, scientists have seen direct evidence of active
                 volcanism on Earth’s twin, setting the stage for the agency’s
                 VERITAS mission to investigate.
               </p>
+            </div>
+          </div>
+          <hr />
+          <div class="article">
+            <div>
+              <img
+                src="images/Articles/mariner22.jpg"
+                alt="Mariner spacecraft"
+              />
+            </div>
+            <div>
               <a
-                href="https://www.nasa.gov/missions/veritas/nasas-magellan-data-reveals-volcanic-activity-on-venus/"
+                href="https://www.nasa.gov/history/60-years-ago-mariner-2-launches-to-explore-venus/"
                 target="_blank"
-                >Read more</a
+                ><h3>60 Years Ago: Mariner 2 Launches to Explore Venus</h3></a
               >
+              <p>
+                In the early 1960s, in addition to taking on the challenge to
+                land men on the Moon by the end of the decade, NASA also set its
+                sights on exploring our planetary neighbors. The agency gave
+                responsibility for planetary exploration…
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="article">
+            <div>
+              <img
+                src="images/Articles/davinci-mission2.jpg"
+                alt="Davinci-mission"
+              />
+            </div>
+            <div>
+              <a
+                href="https://www.nasa.gov/centers-and-facilities/goddard/nasas-davinci-mission-to-take-the-plunge-through-massive-atmosphere-of-venus/"
+                target="_blank"
+                ><h3>
+                  DAVINCI Mission to take the plunge through Massive atmosphere
+                  of Venus
+                </h3></a
+              >
+              <p>
+                Nasa scientists and engineers give new details about the
+                agency's deep atmosphere Venus investigation (DAVINCI) mission,
+                which will descend through the layered Venus atmosphere to the
+                surface of the planet in mid-2031.
+              </p>
             </div>
           </div>
         </div>
@@ -309,10 +337,11 @@
               <button type="button" class="expanding">Facts</button>
               <div class="content">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Atque consectetur, dolorum quaerat sunt maiores laudantium
-                  beatae nesciunt quis sequi natus eligendi accusamus sapiente,
-                  hic laboriosam culpa, debitis neque? Alias, aperiam.
+                  <a
+                    href="https://www.rmg.co.uk/stories/topics/interesting-facts-about-venus"
+                    target="_blank"
+                    >https://www.rmg.co.uk/stories/topics/interesting-facts-about-venus</a
+                  >
                 </p>
               </div>
             </li>
@@ -334,12 +363,14 @@
     </main>
     <footer>
       <div class="venus-footer">
-        <div id="privacy">
+        <div id="logo">
+          <h2>venus</h2>
           <a href="">Terms & Conditions</a>
           <a href="">Privacy Notice</a>
           <a href="">Accessebility</a>
           <a href="">Cookies Policy</a>
         </div>
+        <div id="privacy"></div>
       </div>
     </footer>
   </body>
