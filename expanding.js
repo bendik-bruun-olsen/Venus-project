@@ -1,16 +1,14 @@
 window.onload = function () {
-  var coll = document.getElementsByClassName("expanding");
-  var i;
+  let exp = document.getElementsByClassName("expanding");
 
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
-      this.classList.toggle("active"); // this reprsesnts the element with collapsible class which is clicked
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        // === to check if the two values are equal
-        content.style.display = "none";
+  for (let i = 0; i < exp.length; i++) {
+    exp[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      let content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
       } else {
-        content.style.display = "block";
+        content.style.maxHeight = content.scrollHeight + "px";
       }
     });
   }

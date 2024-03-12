@@ -213,6 +213,7 @@ main {
   color: white;
   font-size: 1rem;
   border: none;
+  overflow: hidden;
 }
 
 .active,
@@ -227,11 +228,15 @@ main {
 
 .content {
   width: 100%;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  padding: 15px 20px;
-  display: none;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 0;
   background-color: whitesmoke;
+  transition: max-height 0.2s ease-out;
+}
+
+.content p {
+  padding: 10px;
 }
 
 .active:after {
@@ -303,6 +308,7 @@ hr {
 /* Grid */
 .grid-container {
   display: grid;
+  padding: 10px;
   grid-template-rows: 30px auto;
   grid-template-columns: 100px auto;
   gap: 10px;
